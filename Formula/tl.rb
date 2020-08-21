@@ -2,24 +2,24 @@
 class Tl < Formula
   desc "verify https assets with a public transparency log"
   homepage "https://www.transparencylog.com/"
-  version "0.2.11"
+  version "0.2.12"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/transparencylog/tl/releases/download/v0.2.11/tl_0.2.11_darwin_x86_64.tar.gz"
-    sha256 "b9b695f844eb5ab83e384783fcc7477725e190068d6b8073cd7b3bb96392e017"
+    url "https://github.com/transparencylog/tl/releases/download/v0.2.12/tl_0.2.12_darwin_x86_64.tar.gz"
+    sha256 "730507e381a6a808831c10072d7f74156dad647109c8754e7fab46aaea4c3e57"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/transparencylog/tl/releases/download/v0.2.11/tl_0.2.11_linux_x86_64.tar.gz"
-      sha256 "9a49a5e668baaa623bb31177b16ca766ad20a6cef434fe9db4f1f2179e507870"
+      url "https://github.com/transparencylog/tl/releases/download/v0.2.12/tl_0.2.12_linux_x86_64.tar.gz"
+      sha256 "dcc53c3c61f3faf1f6451e38e1f9fde7f71b03df0a7d4ff261643f267dddf5be"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/transparencylog/tl/releases/download/v0.2.11/tl_0.2.11_linux_arm64.tar.gz"
-        sha256 "b5e6821f058f52ad407bc2a1e4d61a27fc0aef88d2558733afdae399737bf5f6"
+        url "https://github.com/transparencylog/tl/releases/download/v0.2.12/tl_0.2.12_linux_arm64.tar.gz"
+        sha256 "6321d2e6b6e9dce0ac8b6b4245b0f29e8d4f3877307c0fb8b209013010007abb"
       else
-        url "https://github.com/transparencylog/tl/releases/download/v0.2.11/tl_0.2.11_linux_armv6.tar.gz"
-        sha256 "c435dcb279f72ad2c24b47c233b53c47bcfe0cc56475500f8a579621be17df17"
+        url "https://github.com/transparencylog/tl/releases/download/v0.2.12/tl_0.2.12_linux_armv6.tar.gz"
+        sha256 "b264fe6e00d063b9adc4532912c7e62bc32998452df148e93d2d105003c6fe2c"
       end
     end
   end
