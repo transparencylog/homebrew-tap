@@ -3,7 +3,6 @@ class Tl < Formula
   desc "verify https assets with a public transparency log"
   homepage "https://www.transparencylog.com/"
   version "0.2.12"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/transparencylog/tl/releases/download/v0.2.12/tl_0.2.12_darwin_x86_64.tar.gz"
